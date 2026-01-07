@@ -1,0 +1,217 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}  
+
+          
+
+
+header { 
+    background: linear-gradient(90deg, #124c83, #1b9aaa);
+    padding: 18px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000; 
+}
+
+
+.logo {
+    color: #f4d35e;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: oblique;
+    font-display: fallback;
+}
+
+
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    position: relative;
+    text-decoration: none;
+    color: rgba(117, 240, 245, 0.87);
+    font-size: 15px;
+    font-weight: 600;
+    padding: 8px 14px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+} 
+
+/* Hover Effect */
+nav a:hover {
+    background-color: #f4d35e;
+    color: #0d3b66;
+    box-shadow: 0 8px 20px rgba(244, 211, 94, 0.6);
+}
+
+/* Animated underline */
+nav a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 4px;
+    width: 0;
+    height: 3px;
+    background-color: #f4d35e;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+    border-radius: 10px;
+}
+
+nav a:hover::after {
+    width: 60%;
+}
+
+/* Active Page Highlight (Optional) */
+nav a.active {
+    background-color: #f4d35e;
+    color: #0d3b66;
+}
+
+    
+
+.attractions-section {
+    padding: 70px 8%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    background-color: #f8f9fa;
+}
+
+.attraction-card {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.attraction-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.18);
+}
+
+.attraction-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.attraction-content {
+    padding: 25px;
+}
+
+.attraction-content h3 {
+    color: #0d3b66;
+    margin-bottom: 10px;
+}
+
+.attraction-content p {
+    color: #2b2b2b;
+    line-height: 1.6;
+}
+
+/* =========================
+   ATTRACTIONS PAGE HEADER
+   ========================= */
+
+.attractions-hero {
+    height: 55vh;
+    background:
+        linear-gradient(rgba(13,59,102,0.75), rgba(13,59,102,0.75)),
+        url("../images/attractions-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Header Text Container */
+.header-content {
+    max-width: 850px;
+}
+
+/* Main Title */
+.header-content h1 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #f4d35e;
+    margin-bottom: 12px;
+}
+
+/* Subtitle */
+.header-content p {
+    font-size: 18px;
+    color: #ffffff;
+    line-height: 1.7;
+}
+
+.footer {
+    background: #0d3b66;
+    padding: 30px 8%;
+    color: white;
+}
+
+
+.footer-text {
+    font-size: 14px;
+}
+
+/* SOCIAL ICONS */
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    width: 38px;
+    height: 38px;
+    background: rgba(255,255,255,0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.social-icons img {
+    width: 18px;
+    height: 18px;
+    filter: invert(1);
+}
+
+/* Hover Effect */
+.social-icons a:hover {
+    background: #f4d35e;
+    transform: translateY(-4px);
+}
+
+.social-icons a:hover img {
+    filter: invert(0);
+}
+
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    text-align: center;
+}
