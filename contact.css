@@ -18,7 +18,7 @@ header {
 }  
 
 
-/* Navigation Links */
+
 nav {
     display: flex;
     gap: 25px;
@@ -35,14 +35,14 @@ nav a {
     transition: all 0.3s ease; 
 } 
 
-/* Hover Effect */
+
 nav a:hover {
     background-color: #f4d35e;
     color: #0d3b66;
     box-shadow: 0 8px 20px rgba(244, 211, 94, 0.6);
 }
 
-/* Animated underline */
+
 nav a::after {
     content: "";
     position: absolute;
@@ -60,14 +60,14 @@ nav a:hover::after {
     width: 60%;
 }
 
-/* Active Page Highlight (Optional) */
+
 nav a.active {
     background-color: #f4d35e;
     color: #0d3b66;
 }
 
 
-/* CONTACT PAGE HEADER */
+
 .contact-hero {
     background:
         linear-gradient(rgba(13,59,102,0.8), rgba(13,59,102,0.8)),
@@ -84,7 +84,7 @@ nav a.active {
     color: #f4d35e;
 }
 
-/* CONTACT CONTAINER */
+
 .contact-container {
     padding: 60px 8%;
     display: grid;
@@ -92,7 +92,7 @@ nav a.active {
     gap: 40px;
 }
 
-/* CONTACT INFO */
+
 .contact-info h2 {
     color: #0d3b66;
     margin-bottom: 15px;
@@ -103,7 +103,7 @@ nav a.active {
     color: #555;
 }
 
-/* CONTACT FORM */
+
 .contact-form {
     background: white;
     padding: 30px;
@@ -154,7 +154,7 @@ nav a.active {
     font-size: 14px;
 }
 
-/* SOCIAL ICONS */
+
 .social-icons {
     display: flex;
     gap: 15px;
@@ -177,7 +177,7 @@ nav a.active {
     filter: invert(1);
 }
 
-/* Hover Effect */
+
 .social-icons a:hover {
     background: #f4d35e;
     transform: translateY(-4px);
@@ -195,4 +195,9 @@ nav a.active {
     justify-content: center;
     gap: 15px;
     text-align: center;
+}
+
+.error {
+  color: red;
+  font-size: 13px;
 }
